@@ -1,0 +1,36 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use Getopt::Long;
+use Data::UUID;
+use Digest::MD5;
+use Convert::Base32;
+
+# Config Section
+use constant COGDB => "ENV{HOME}/.cogdb";
+
+sub assert_cogdb {
+    die "HOME environment variable not defined"
+      unless defined $ENV{HOME};
+    my $db = COGDB;
+    for my $dir ($db, "$db/index", "$db/data") {
+        mkdir $dir unless -d $dir;
+    }
+}
+
+sub generate_uuid {
+    return uc(
+        Convert::Base32::encode_base32(
+            Digest::MD5::md5(
+                Data::UUID->new->create_str()
+            )
+        )
+    );
+}
+
+BEGIN {
+    assert_cogdb();
+    print generate_uuid(), "\n";
+}
+

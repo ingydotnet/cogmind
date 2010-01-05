@@ -1,0 +1,27 @@
+# We queried a (so far imaginary) CogBase, got a result in python memory and
+# dumped it into the YAML below:
+--- !result_set
+- id: AA01
+  type: thought
+  data:
+    _: cogmind
+    time: 1262721234252
+
+- id: BB01
+  type: thought
+  data:
+    _: Mashup of CogBase and MindMap
+    time: 1262721297710
+
+
+x    <node CREATED="1262721308209" ID="Freemind_Link_496786864" MODIFIED="1262721313082" POSITION="right" TEXT="CogBase"/>
+x    <node CREATED="1262721314598" ID="Freemind_Link_504338998" MODIFIED="1262721319850" POSITION="right" TEXT="FreeMind"/>
+    <node CREATED="1262721329667" ID="Freemind_Link_758429664" MODIFIED="1262721333627" POSITION="right" TEXT="Hackers">
+x        <node CREATED="1262721320833" ID="Freemind_Link_307446053" MODIFIED="1262721328736" TEXT="Alex"/>
+x        <node CREATED="1262721338209" ID="Freemind_Link_1766908926" MODIFIED="1262721340286" TEXT="Ingy"/>
+    </node>
+x    <node CREATED="1262721379070" ID="Freemind_Link_1841100081" MODIFIED="1262721383996" POSITION="right" TEXT="Technology">
+x    <node CREATED="1262721298814" ID="Freemind_Link_963712744" MODIFIED="1262721307217" TEXT="Python"/>
+    </node>
+</node>
+</map>

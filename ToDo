@@ -20,6 +20,9 @@
 
 !thought #F501
 _: Pair programming is useful.
+tags:
+- programming
+- *H3 (paradigm)
 
 ======================
 !thought < !NODE
@@ -32,6 +35,7 @@ _: !PHRASE
 
 author: !USER_ID
 time: !TIMESTAMP
+tags: !WORD*
 ======================
 
 == CogBase Truths
