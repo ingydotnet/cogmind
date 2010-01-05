@@ -1,0 +1,51 @@
+- CogBase stores Nodes
+
+- Every Node has a Type
+- Every Type inherits from another Type
+- Every Type has a Schema
+- Every Schema has a Node
+
+- Every Node has a UUID
+- A UUID is a 26 char, uppercase, base32, md5, uuid
+- Every UUID has a unique ShortID that is 4 or more chars
+- Every Node has one or more Revisions
+- Every Revision has a number (01 - 0n)
+
+- CogBase is Purple
+- CogBase supports REST access
+
+- CogBase uses Sigils
+  - ! means type
+    -
+
+!thought #F501
+_: Pair programming is useful.
+
+======================
+!thought < !NODE
+
+_: !PHRASE
+======================
+
+======================
+!NODE
+
+author: !USER_ID
+time: !TIMESTAMP
+======================
+
+== CogBase Truths
+- 
+
+- CogMind is a utility that takes input:
+  - CogBase location
+  - CogBase query
+- Really we can fake the input with a YAML file
+- and produces output:
+  - a .mm Mindmap
+
+- Create a very simple MM in FM
+- Create a CogBase by hand
+  - Take notes on design
+- Write a test that generates the equivalent MM from the CB using CM
+
